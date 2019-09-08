@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="./styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="protocol">
+    <section>
+        <table id="acceptanceForm">
+            <thead>
+            <tr>
+                <th colspan="5">Acceptance form</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr id="productInfo">
+                <td>Company</td>
+                <td>Product</td>
+                <td>Quantity</td>
+                <td>Scrape</td>
+                <td>Acceptance</td>
+            </tr>
+            <tr id="fields">
+                <td><input name="shippingCompany" placeholder="Coca-Cola Bulgaria.." type="text"/></td>
+                <td><input name="productName" placeholder="Coca-Cola.." type="text"/></td>
+                <td><input name="productQuantity" placeholder="200.." type="text"/></td>
+                <td><input name="productScrape" placeholder="14.." type="text"/></td>
+                <td>
+                    <button id="acceptance" type="button">Add it</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <div id="warehouse">
+            <h1>Stock available in the warehouse</h1>
+        </div>
+    </section>
+</div>
+</body>
+<script src="./scripts/app.js"></script>
+<script>
+    document.onload = acceptance();
+</script>
+</html>
