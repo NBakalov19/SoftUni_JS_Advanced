@@ -1,0 +1,76 @@
+x<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="template.css" rel="stylesheet">
+    <title>Locked Profile</title>
+</head>
+
+<body>
+<div id="container">
+    <main id="main">
+
+        <div class="profile">
+            <img class="userIcon" src="./iconProfile2.png"/>
+            <label>Lock</label>
+            <input checked name="user1Locked" type="radio" value="lock">
+            <label>Unlock</label>
+            <input name="user1Locked" type="radio" value="unlock"><br>
+            <hr>
+            <label>Username</label>
+            <input disabled name="user1Username" readonly type="text" value="User 1 Userov"/>
+            <div id="user1HiddenFields">
+                <hr>
+                <label>Email:</label>
+                <input disabled name="user1Email" readonly type="email" value="user1-userov@users.bg"/>
+                <label>Age:</label>
+                <input disabled name="user1Age" readonly type="email" value="18"/>
+            </div>
+            <button>Show more</button>
+        </div>
+
+        <div class="profile">
+            <img class="userIcon" src="./iconProfile2.png"/>
+            <label>Lock</label>
+            <input checked name="user2Locked" type="radio" value="lock">
+            <label>Unlock</label>
+            <input name="user2Locked" type="radio" value="unlock"><br>
+            <hr>
+            <label>Username</label>
+            <input disabled name="user2Username" readonly type="text" value="User 2 Userov"/>
+            <div id="user2HiddenFields">
+                <hr>
+                <label>Email:</label>
+                <input disabled name="user2Email" readonly type="email" value="user2-userov@users.bg"/>
+                <label>Age:</label>
+                <input disabled name="user2Age" readonly type="email" value="25"/>
+            </div>
+            <button>Show more</button>
+        </div>
+
+        <div class="profile">
+            <img class="userIcon" src="./iconProfile2.png"/>
+            <label>Lock</label>
+            <input checked name="user3Locked" type="radio" value="lock">
+            <label>Unlock</label>
+            <input name="user3Locked" type="radio" value="unlock"><br>
+            <hr>
+            <label>Username</label>
+            <input disabled name="user3Username" readonly type="text" value="User 3 Userov"/>
+            <div id="user3HiddenFields">
+                <hr>
+                <label>Email:</label>
+                <input disabled name="user3Email" readonly type="email" value="user3-userov@users.bg"/>
+                <label>Age:</label>
+                <input disabled name="user3Age" readonly type="email" value="23"/>
+            </div>
+            <button>Show more</button>
+        </div>
+    </main>
+</div>
+<script src="./app.js"></script>
+<script>
+    window.onload = lockedProfile();
+</script>
+</body>
+</html>
